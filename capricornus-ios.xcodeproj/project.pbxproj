@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		04966D7D2FB74F6D000C0899 /* WhisperKit in Frameworks */ = {isa = PBXBuildFile; productRef = 04966D7C2FB74F6D000C0899 /* WhisperKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		04966D292FB08035000C0899 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +33,22 @@
 		04966D322FB08035000C0899 /* capricornus-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "capricornus-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		04966D742FB17D6F000C0899 /* Exceptions for "capricornus-ios" folder in "capricornus-ios" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 04966D192FB08032000C0899 /* capricornus-ios */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		04966D1C2FB08032000C0899 /* capricornus-ios */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				04966D742FB17D6F000C0899 /* Exceptions for "capricornus-ios" folder in "capricornus-ios" target */,
+			);
 			path = "capricornus-ios";
 			sourceTree = "<group>";
 		};
@@ -52,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04966D7D2FB74F6D000C0899 /* WhisperKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +130,7 @@
 			);
 			name = "capricornus-ios";
 			packageProductDependencies = (
+				04966D7C2FB74F6D000C0899 /* WhisperKit */,
 			);
 			productName = "capricornus-ios";
 			productReference = 04966D1A2FB08032000C0899 /* capricornus-ios.app */;
@@ -195,6 +214,9 @@
 			);
 			mainGroup = 04966D112FB08032000C0899;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				04966D7B2FB74F6D000C0899 /* XCRemoteSwiftPackageReference "WhisperKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 04966D1B2FB08032000C0899 /* Products */;
 			projectDirPath = "";
@@ -397,6 +419,9 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "capricornus-ios/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Used to provide location-aware navigation guidance";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Used to transcribe voice from the ESP32 device";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -436,6 +461,9 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "capricornus-ios/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Used to provide location-aware navigation guidance";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Used to transcribe voice from the ESP32 device";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -593,6 +621,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		04966D7B2FB74F6D000C0899 /* XCRemoteSwiftPackageReference "WhisperKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/argmaxinc/WhisperKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		04966D7C2FB74F6D000C0899 /* WhisperKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04966D7B2FB74F6D000C0899 /* XCRemoteSwiftPackageReference "WhisperKit" */;
+			productName = WhisperKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 04966D122FB08032000C0899 /* Project object */;
 }
